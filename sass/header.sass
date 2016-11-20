@@ -1,0 +1,304 @@
+@import "bourbon"
+@import "var.sass"
+*
+	box-sizing: border-box
+ul
+	list-style: none
+	padding: 0
+	cursor: pointer
+a
+	color: inherit
+	border: none
+	&:hover
+		text-decoration: none
+		color: inherit
+	&:visited
+		text-decoration: none
+		color: inherit
+	&:link
+		text-decoration: none
+		color: inherit
+		outline: none
+.fix-left
+	transform: translateX(-195px)
+header
+	position: relative
+	padding-bottom: 220px
+	background: url(../img/header/bg.jpg) 0 0 no-repeat
+	background-size: cover
+	.fix-menu
+		background: $fixMenuCol
+		float: left
+		position: fixed
+		height: 1200px
+		z-index: 1
+		transition: all .3s ease
+		.toggle-mnu
+			position: absolute
+			top: -9px!important
+			right: -30px
+			display: block
+			width: 28px
+			height: 28px
+			margin-top: 14px
+			z-index: 10000
+			&::after
+				content: ''
+				position: absolute
+				top: -5px
+				left: -5px
+				right: -4px
+				bottom: 1px
+				background: $fixMenuCol
+				z-index: -1
+			span:after, span:before
+				content: ""
+				position: absolute
+				left: 0
+				top: 9px
+			span:after
+				top: 18px
+			span
+				position: relative
+				display: block
+			span, span:after, span:before
+				width: 100%
+				height: 2px
+				background-color: #fff
+				transition: all 0.3s
+				backface-visibility: hidden
+				border-radius: 2px
+			&.on span
+				background-color: transparent
+			&.on span:before
+				transform: rotate(45deg) translate(-1px, 0px)
+			&.on span:after
+				transform: rotate(-45deg) translate(6px, -7px)
+		&-logo
+			padding: 35px 58px 0 69px
+			display: inline-block
+			text-align: center
+			&-text
+				color: lighten(#1d263c, 10%)
+				padding-bottom: 7px
+				font-family: $PtSansReg,sans-serif
+				font-size: em(14px)
+				letter-spacing: .5px
+		.first-list
+			padding-top: 45px
+			border-top: 1px solid #1d263c
+		.middle-list
+			margin-top: 25px
+		.last-list
+			margin-top: 88px
+			li
+				&::after
+					content: ''
+					display: none
+		.fix-menu-list-city-dorop
+			display: none
+			position: absolute
+			z-index: 5
+			background-color: $dropMenuBg
+			position: absolute
+			top: 30px
+			left: -40px
+			right: 0
+			bottom: -28px
+			text-align: center
+			&-item
+				transform: translate(-5%)
+				margin-top: 5px
+		&-list
+			color: #fff
+			cursor: pointer
+			font-family: $PtSansReg,sans-serif
+			transition: all .5s ease
+			position: relative
+			z-index: -1
+			padding-left: 40px
+			&-drop
+				position: fixed
+				color: #fff
+				padding-left: 40px
+				&-item
+					margin-bottom: 25px
+					margin-left: 12px
+			.none-droped
+				transform: translateX(-240px)
+				transition: transform .6s ease, opacity .2s ease
+				opacity: 0
+			.droped
+				transform: translate(200px)
+				transition: transform .5s ease, opacity 1s linear
+				opacity: 1
+				&::after
+					content: '1'
+					position: absolute
+					top: -1000px
+					bottom: -1000px
+					left: 12px
+					right: -30px
+					background-color: $dropMenuBg
+				li::after
+					right: -30px
+					bottom: -13px
+					top: -12px
+			li
+				transition: all .5s ease
+				position: relative
+				z-index: 2
+				&::after
+					content: ''
+					background: #1d263c
+					opacity: 0
+					position: absolute
+					top: 0
+					left: -40px
+					right: 0
+					bottom: -1px
+					z-index: -1
+					transition: all .5s ease
+				&:hover
+					color: $accentColor
+					&::after
+						opacity: 1
+			&-bold
+				font-family: $PTSansBold, sans-serif
+				text-transform: uppercase
+				font-size: em(18px)
+				padding: 8px 0
+				position: relative
+				.fa
+					position: absolute
+					top: 15%
+					right: 13%
+					font-size: em(28px)
+			&-lighter
+				position: relative
+				padding: 7px 0
+				.popup-with-move-anim
+					display: block
+					padding: 3px 0px
+					border: none
+				.fa
+					position: absolute
+					top: 15%
+					right: 13%
+					font-size: em(28px)
+			&-city
+				display: flex
+				flex-wrap: nowrap
+				align-items: center
+				margin-bottom: 20px
+				.city-first
+					border-bottom: 1px dashed #1d263c
+					padding-bottom: 2px
+				.point
+					background: url(../img/header/point.png) 0 0 no-repeat
+					width: 15px
+					height: 20px
+					margin-right: 15px
+				.fa
+					margin-left: 13px
+					color: $accentColor
+					font-weight: bold
+					font-size: em(12px)
+			&-basket
+				margin-bottom: 12px
+				.cart
+					background: url(../img/header/cart.png) 0 0 no-repeat
+					display: inline-block
+					width: 20px
+					height: 18px
+					margin-right: 10px
+					position: relative
+					&-count
+						background: $accentColor
+						border-radius: 25px
+						padding-top: 3px
+						width: 15px
+						height: 15px
+						text-align: center
+						vertical-align: middle
+						position: absolute
+						font-size: em(9px)
+						top: -8px
+						right: -8px
+						font-family: $PTSansBold,sans-serif
+				.total
+					border-bottom: 1px dashed #1d263c
+					padding-bottom: 2px
+			&-phone
+				.phone-icon
+					display: inline-block
+					background: url(../img/header/phone.png) 0 0 no-repeat
+					width: 19px
+					height: 19px
+					margin-right: 13px
+				.phone-number
+					border-bottom: 1px dashed #1d263c
+					padding-bottom: 2px
+					font-family: $PTSansBold,sans-serif
+	.head-content
+		position: relative
+		text-align: center
+		padding: 205px 0 0 100px
+		color: #fff
+		display: inline-block
+		z-index: 0
+		&-h1
+			font-family: $RobotoBlack,sans-serif
+			font-size: em(60px)
+			letter-spacing: 5px
+			margin-bottom: 45px
+		&-text
+			font-size: em(18px)
+			text-align: center
+		&-button
+			display: inline-block
+			font-family: $PTSansBold, sans-serif
+			font-size: em(16px)
+			color: $accentColor
+			border: 2px solid $accentColor
+			padding: 15px 55px
+			margin: 32px 10px 0 0
+			transition: all .3s ease
+			&:hover
+				transform: scale(1.1)
+		.mouse-icon
+			display: inline-block
+			margin-top: 170px
+			border: 2px solid #000
+			border-radius: 16px
+			height: 40px
+			width: 24px
+			z-index: 10
+			opacity: 0.7
+			cursor: pointer
+			.wheel
+			  animation-duration: 1s
+			  animation-timing-function: linear
+			  animation-delay: 0s
+			  animation-iteration-count: infinite
+			  animation-name: drop
+			  position: relative
+			  border-radius: 10px
+			  background: #000
+			  width: 2px
+			  height: 6px
+			  top: 4px
+			  margin-left: auto
+			  margin-right: auto
+
+	@keyframes drop
+	  0%
+	    top: 5px
+	    opacity: 0
+	  30%
+	    top: 10px
+	    opacity: 1
+
+	  100%
+	    top: 25px
+	    opacity: 0

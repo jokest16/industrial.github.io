@@ -1,0 +1,333 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	header
+		.fix-menu
+			margin-left: -75px
+			&-logo
+				transform: translateX(30px)
+			&-list
+				padding-left: 80px
+
+@media only screen and (max-width : 1200px)
+	header
+		.fix-menu
+			&-list
+				.droped
+					transform: translate(175px)
+		.head-content
+			padding-top: 100px
+			&-h1
+				font-size: em(40px)
+	.about
+		.special
+			margin-left: 150px
+			margin-right: 50px
+		&-h2
+			margin-right: 50px
+			margin-left: 150px
+		&-text
+			text-align: center
+			margin-left: 140px
+			margin-right: 50px
+		.owl-horizont
+			margin-left: -10px
+			.owl-nav
+				top: 30.8%!important
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header
+		padding-bottom: 190px
+		.head-content
+			padding: 205px 0 0 0px!important
+			.mouse-icon
+				margin-top: 100px
+	.products
+		position: relative
+		&-item
+			margin-right: 20px
+			padding: 15px 20px 0 20px
+			&-h3
+				font-size: em(15px)
+			img
+				position: relative
+				left: 0
+	.about
+		left: 0
+		.owl-horizont
+			.owl-nav
+				top: 29%!important
+			&-slide
+				.owl-horizont-vertical
+					padding: 0px 7.8px 20px 20px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	header
+		.fix-menu
+			background: $fixMenuCol
+			float: left
+			position: fixed
+			height: 1200px
+			z-index: 1
+			transition: all .3s ease
+			&-logo
+				padding: 5px 58px 0 69px
+				&-text
+					padding: 0
+					margin: 0
+			.first-list
+				padding-top: 5px
+			.middle-list
+				margin-top: 0px
+			.last-list
+				margin-top: 5px
+			.fix-menu-list-city-dorop
+				left: 20%
+			&-list
+				&-drop
+					position: fixed
+					top: 40%
+					transform: translateY(-50%)
+					padding-left: 5px
+					.droped
+						transform: translate(180px)!important
+				&-bold
+					padding: 5px 0
+					.fa
+						position: absolute
+						top: 10%
+						right: 13%
+				&-lighter
+					position: relative
+					padding: 2px 0
+	.head-content
+		position: relative
+		text-align: center
+		padding: 205px 0 0 0px!important
+	.products
+		position: relative
+		right: 60px
+		.special
+			margin-left: 0px
+		&-h2
+			margin-left: 0px!important
+		&-item
+			margin-bottom: 40px
+			padding: 50px 40px 40px 40px
+			img
+				position: relative
+				left: 90px
+	.about
+		left: 0px
+		.owl-horizont
+			.owl-nav
+				right: 2.8%
+				top: 55%!important
+				.owl-prev
+					background: $accentColor
+					width: 45px
+					height: 35px
+					font-size: em(25px)
+				.owl-next
+					width: 45px
+					height: 35px
+					font-size: em(25px)
+			&-slide
+				.owl-horizont-vertical
+					margin-right: 20px
+					width: 80%
+					&-h3
+						font-size: em(16px)
+					&-text
+						font-size: em(14px)
+						padding: 0
+	footer
+		font-size: em(13px)
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+@media only screen and (max-width : 595px)
+	header
+	.head-content
+		&-h1
+			font-size: em(30px)!important
+		&-text
+			font-size: em(16px)!important
+		&-button
+			font-size: em(16px)
+			padding: 15px 55px
+			margin: 32px 10px 0 0
+	.products
+		position: relative
+		right: 60px
+		.special
+			margin-left: 0px
+		&-h2
+			margin-left: 0px!important
+		&-item
+			padding: 15px 20px 0 20px
+			img
+				position: relative
+				left: 20px
+	.about
+		&-h2
+			font-size: em(25px)
+			margin-left: 20px
+		&-text
+			margin-left: 20px
+			font-size: em(18px)
+			left: 0px
+		.special
+			margin-left: 20px
+		.owl-horizont
+			.owl-nav
+				right: 4.2%
+				top: 35%!important
+				.owl-prev
+					background: $accentColor
+					width: 45px
+					height: 35px
+					font-size: em(25px)
+				.owl-next
+					width: 45px
+					height: 35px
+					font-size: em(25px)
+			&-slide
+				.owl-horizont-vertical
+					margin-right: 20px
+					width: 90%
+					&-h3
+						font-size: em(16px)
+					&-text
+						font-size: em(14px)
+						padding: 0
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.products
+		&-h2
+			font-size: em(23px)
+		&-item
+			padding: 0px 20px 20px 20px
+			img
+				position: relative
+				width: 100%
+				left: 10px
+	.about
+		left: 5px
+		&-h2
+			font-size: em(25px)
+			margin-left: 20px
+		&-text
+			margin-left: 20px
+			font-size: em(18px)
+			left: 0px
+		.special
+			margin-left: 20px
+		.owl-horizont
+			.owl-nav
+				right: 5%
+				top: 16%!important
+				.owl-prev
+					background: $accentColor
+					width: 25px
+					height: 25px
+					font-size: em(15px)
+				.owl-next
+					width: 25px
+					height: 25px
+					font-size: em(15px)
+			&-slide
+				.owl-horizont-vertical
+					padding: 0px 0px 2px 5px
+					width: 55%
+					&-h3
+						font-size: em(13px)
+					&-text
+						font-size: em(12px)
+						padding: 0
+						margin: 0
+					&-button
+						font-size: em(12px)
+						border-bottom: 1px solid #fff
+@media only screen and (max-width : 415px)
+	.about
+		.owl-horizont
+			.owl-nav
+				right: 5%
+				top: 30%!important
+@media only screen and (max-width : 376px)
+	.about
+		.owl-horizont
+			.owl-nav
+				right: 5.8%
+				top: 30%!important
+			&-slide
+				.owl-horizont-vertical
+					width: 85%
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	header
+	.about
+		.owl-horizont
+			.owl-nav
+				right: 7%
+				top: 16%!important
+			&-slide
+				.owl-horizont-vertical
+					width: 85%
+					&-h3
+						font-size: em(13px)
+					&-text
+						font-size: em(12px)
+						padding: 0
+						margin: 0
+					&-button
+						font-size: em(12px)
+						border-bottom: 1px solid #fff
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "PTSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PTSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Arkhip";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Arkhip/Arkhip.eot?#iefix") format("embedded-opentype"), url("../fonts/Arkhip/Arkhip.woff") format("woff"), url("../fonts/Arkhip/Arkhip.ttf") format("truetype"); }

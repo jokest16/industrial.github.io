@@ -1,0 +1,192 @@
+@import "bourbon"
+@import "var.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/css/font-awesome"
+@import "app/libs/owl.carousel/dist/assets/owl-carousel"
+@import "app/libs/magnific-popup/dist/magnific-popup"
+@import "app/css/magnifick-custom"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+h2
+	margin: 0
+	padding: 0
+.special
+	color: #f4f5f5
+	text-align: center
+	font-size: em(55px)
+	font-family: $RobotoLight,sans-serif
+	font-weight: lighter
+.products
+	margin: 75px 0 100px 120px
+	position: relative
+	.special
+	&-h2
+		color: #000
+		text-align: center
+		font-family: $RobotoBlack, sans-serif
+		font-size: em(36px)
+		display: block
+		margin-bottom: 60px
+	&-item
+		border: 5px solid #f4f5f5
+		transition: all .3s ease
+		margin: 0px 0 30px 30px
+		padding: 50px 40px 40px 40px
+		&-h3
+			float: left
+			display: inline-block
+			padding-top: 50px
+		img
+			position: relative
+			right: -50px
+		&:hover
+			border-color: $accentColor
+.about
+	background: $evenSectBg
+	position: relative
+	z-index: 0
+	padding-bottom: 110px
+	&-h2
+		text-align: center
+		margin-left: 150px
+		font-family: $RobotoBlack, sans-serif
+		font-size: em(36px)
+		margin-bottom: 40px
+		position: relative
+	&-text
+		text-align: center
+		margin-left: 160px
+		font-family: $PtSansReg,sans-serif
+		font-size: em(18px)
+		margin-bottom: 60px
+	.special
+		color: #e9eaeb
+		margin-left: 150px
+		margin-top: 70px
+	.owl-horizont
+		.owl-nav
+			display: flex
+			position: absolute
+			right: 0
+			top: 48.7%
+			.owl-prev
+				background: $accentColor
+				width: 45px
+				height: 45px
+				color: #fff
+				font-size: em(30px)
+				position: relative
+				transition: all .3s ease
+				.fa
+					position: absolute
+					top: 25%
+					left: 25%
+				&:hover
+					background: darken($accentColor, 10%)
+			.owl-next
+				background: $accentColor
+				width: 45px
+				height: 45px
+				color: #fff
+				font-size: em(30px)
+				position: relative
+				transition: all .3s ease
+				.fa
+					position: absolute
+					top: 25%
+					left: 25%
+				&:hover
+					background: darken($accentColor, 10%)
+		&-slide
+			padding: 0 44.6px 30px 0px
+			.owl-horizont-vertical
+				padding: 50px 80px 40px 40px
+				margin-left: 40px
+				background-color: $fixMenuCol
+				position: absolute
+				z-index: 2
+				bottom: 0
+				right: 0
+				color: #fff
+				width: 48%
+				display: block
+				&-h3
+					font-size: em(26px)
+				&-text
+					font-family: $PtSansReg,sans-serif
+				&-button
+					font-family: $PTSansBold,sans-serif
+					transition: all .3s ease
+					border-bottom: 3px solid #fff
+					z-index: 100
+					&:hover
+						border-bottom: 3px solid $accentColor
+						color: $accentColor
+footer
+	background-color: $footCol
+	color: #fff
+	padding: 50px 0
+	.copy
+	.FE
+		display: inline-block
+		float: right
+		margin-right: -10px
+		span
+			font-family: "Arkhip", sans-serif
+.hidden
+	display: none
+#small-dialog
+	padding:  55px 80px 60px 80px
+	position: fixed
+	z-index: 999
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	h2
+		font-size: em(36px)
+	.mfp-close
+		font-size: em(60px)
+		position: absolute
+		top: 12%
+		right: 12%
+		color: darken(#e6e7e8, 15%)
+	.list-left
+		.list-item
+			&-bold
+				font-family: $PTSansBold
+				margin-bottom: 18px
+		.button
+			margin-top: 65px
+			color: $accentColor
+	.list-rigth
+		.list-item
+			&-bold
+				font-family: $PTSansBold
+				margin-bottom: 18px
+	.last
+		margin-bottom: 40px
+//ALWAYS END
+@import "media"
